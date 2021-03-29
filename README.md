@@ -10,7 +10,7 @@
 - User settings -> Access token -> Generate new token (it want be editable so dont lose it)
 - on the shell: 
     - `databricks configure --profile workspace-1 --token`
-    - will and an entry in: `~/.databrickscfg` (let's have a look at it) 
+    - will add an entry in: `~/.databrickscfg` (let's have a look at it) 
     
 ![](databrickscfg.JPG)
         
