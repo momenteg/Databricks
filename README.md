@@ -7,7 +7,7 @@
 
 ### Authentication: 
 - Go to databricks workspace (azure portal)
-- User settings -> Access token -> Generate new token (it want be editable so dont lose it)
+- User settings -> Access token -> Generate new token (it won't be editable so don't lose it)
 - on the shell: 
     - `databricks configure --profile workspace-1 --token`
     - will add an entry in: `~/.databrickscfg` (let's have a look at it) 
