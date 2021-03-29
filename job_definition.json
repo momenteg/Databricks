@@ -1,0 +1,28 @@
+{
+    "name": "Job definition",
+    "new_cluster": {
+        "spark_version": "7.3.x-cpu-ml-scala2.12",
+        "spark_conf": {
+          "spark.databricks.delta.preview.enabled": "true"
+        },
+        "instance_pool_id": "instance_pool_id",
+        "azure_attributes": {},
+        "num_workers": 1
+      },
+      "email_notifications": {
+        "on_failure": [
+            "jon.doe@company.com"
+        ]
+    },
+    "libraries": [
+      { "pypi": {
+          "package": "custom_python_package"
+        }
+      }
+    ],
+    "notebook_task": {
+    "notebook_path": "Release/tag_version/master"
+    },
+    "max_concurrent_runs": 1,
+    "timeout_seconds" : 20000
+}
